@@ -77,27 +77,49 @@ class LoginScreen extends StatelessWidget {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  fillColor: Colors.white,
-                  filled: true,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: InputBorder.none,
-                  enabledBorder: InputBorder.none,
-                  labelText: 'Entrez votre mot de passe',
-                  labelStyle: GoogleFonts.getFont('Nunito Sans',
-                      fontSize: 14, letterSpacing: 0.1),
-                  prefixIcon: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Image.asset(
-                      'assets/icons/password.png',
-                      width: 20,
-                      height: 20,
+                    fillColor: Colors.white,
+                    filled: true,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(9),
                     ),
-                  ),
-                  suffixIcon: Icon(Icons.visibility)
-                ),
+                    focusedBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    labelText: 'Entrez votre mot de passe',
+                    labelStyle: GoogleFonts.getFont('Nunito Sans',
+                        fontSize: 14, letterSpacing: 0.1),
+                    prefixIcon: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Image.asset(
+                        'assets/icons/password.png',
+                        width: 20,
+                        height: 20,
+                      ),
+                    ),
+                    suffixIcon: Icon(Icons.visibility)),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: 319,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  gradient: LinearGradient(colors: [
+                    Color(0xFF102DE1),
+                    Color(0xCC0D6EFF),
+                  ]),
+                ),
+                child: Center(
+                  child: Text(
+                    'Se connecter',
+                    style: GoogleFonts.getFont('Lato',
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+              )
             ],
           ),
         ),
